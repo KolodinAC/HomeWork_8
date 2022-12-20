@@ -4,11 +4,13 @@
 using static Common.Helper;
 
 Console.WriteLine($"Введите размер массива X x Y x Z: ");
+Console.WriteLine();
 int x = UserInput("Введите X: ");
 int y = UserInput("Введите Y: ");
 int z = UserInput("Введите Z: ");
 Console.WriteLine($"");
-
+Console.WriteLine("Сгенерированный 3D массив: ");
+Console.WriteLine();
 int[,,] array3D = new int[x, y, z];
 CreateArray(array3D);
 WriteArray(array3D);
